@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://b30twx3y1g4vc"]
+
+[ext_resource type="Texture2D" uid="uid://xp7g5qc1dgkl" path="res://Assets/Sprites/board.png" id="1_bqq0f"]
+[ext_resource type="Script" uid="uid://djia0ajntjanq" path="res://Scenes/Board/board.gd" id="1_ef5ss"]
+[ext_resource type="PackedScene" uid="uid://d145d71f4areo" path="res://Scenes/Board/space.tscn" id="2_ef5ss"]
+
+[node name="Board" type="Node2D"]
+script = ExtResource("1_ef5ss")
+empty_space_scene = ExtResource("2_ef5ss")
+
+[node name="Background" type="Sprite2D" parent="."]
+scale = Vector2(1000, 700)
+texture = ExtResource("1_bqq0f")
+
+[node name="Spaces" type="Node2D" parent="."]

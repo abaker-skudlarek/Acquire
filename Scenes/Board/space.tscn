@@ -1,0 +1,41 @@
+[gd_scene load_steps=6 format=3 uid="uid://d145d71f4areo"]
+
+[ext_resource type="Script" uid="uid://dmb34d8fqogls" path="res://Scenes/Board/space.gd" id="1_2mnqv"]
+[ext_resource type="FontFile" uid="uid://cj84715upfeic" path="res://Assets/Fonts/Kenney Bold.ttf" id="2_2qd28"]
+[ext_resource type="Texture2D" uid="uid://c25kbwcr2hux2" path="res://Assets/Sprites/empty_space.png" id="2_erotd"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_erotd"]
+size = Vector2(66, 66)
+
+[sub_resource type="LabelSettings" id="LabelSettings_2mnqv"]
+font = ExtResource("2_2qd28")
+font_size = 18
+font_color = Color(0.925353, 0.925353, 0.925353, 1)
+outline_size = 2
+outline_color = Color(0, 0, 0, 1)
+shadow_size = 2
+shadow_color = Color(0, 0, 0, 1)
+
+[node name="Space" type="Node2D"]
+script = ExtResource("1_2mnqv")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(66, 66)
+texture = ExtResource("2_erotd")
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+shape = SubResource("RectangleShape2D_erotd")
+
+[node name="CenterContainer" type="CenterContainer" parent="."]
+offset_right = 40.0
+offset_bottom = 40.0
+use_top_left = true
+
+[node name="Label" type="Label" parent="CenterContainer"]
+layout_mode = 2
+text = "XX"
+label_settings = SubResource("LabelSettings_2mnqv")
+
+[connection signal="input_event" from="Area2D" to="." method="_on_area_2d_input_event"]
