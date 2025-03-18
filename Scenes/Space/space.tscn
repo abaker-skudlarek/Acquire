@@ -1,14 +1,14 @@
 [gd_scene load_steps=6 format=3 uid="uid://d145d71f4areo"]
 
-[ext_resource type="Script" uid="uid://dmb34d8fqogls" path="res://Scenes/Board/space.gd" id="1_2mnqv"]
-[ext_resource type="FontFile" uid="uid://cj84715upfeic" path="res://Assets/Fonts/Kenney Bold.ttf" id="2_2qd28"]
-[ext_resource type="Texture2D" uid="uid://c25kbwcr2hux2" path="res://Assets/Sprites/empty_space.png" id="2_erotd"]
+[ext_resource type="Script" uid="uid://dmb34d8fqogls" path="res://Scenes/Space/space.gd" id="1_jfvpn"]
+[ext_resource type="Texture2D" uid="uid://c25kbwcr2hux2" path="res://Assets/Sprites/empty_space.png" id="2_gvlo0"]
+[ext_resource type="FontFile" uid="uid://cj84715upfeic" path="res://Assets/Fonts/Kenney Bold.ttf" id="3_exdb1"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_erotd"]
 size = Vector2(66, 66)
 
 [sub_resource type="LabelSettings" id="LabelSettings_2mnqv"]
-font = ExtResource("2_2qd28")
+font = ExtResource("3_exdb1")
 font_size = 18
 font_color = Color(0.925353, 0.925353, 0.925353, 1)
 outline_size = 2
@@ -17,11 +17,11 @@ shadow_size = 2
 shadow_color = Color(0, 0, 0, 1)
 
 [node name="Space" type="Node2D"]
-script = ExtResource("1_2mnqv")
+script = ExtResource("1_jfvpn")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 scale = Vector2(66, 66)
-texture = ExtResource("2_erotd")
+texture = ExtResource("2_gvlo0")
 
 [node name="Area2D" type="Area2D" parent="."]
 

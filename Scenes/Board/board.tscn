@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://xp7g5qc1dgkl" path="res://Assets/Sprites/board.png" id="1_bqq0f"]
 [ext_resource type="Script" uid="uid://djia0ajntjanq" path="res://Scenes/Board/board.gd" id="1_ef5ss"]
-[ext_resource type="PackedScene" uid="uid://d145d71f4areo" path="res://Scenes/Board/space.tscn" id="2_ef5ss"]
+[ext_resource type="PackedScene" uid="uid://d145d71f4areo" path="res://Scenes/Space/space.tscn" id="2_ef5ss"]
 
 [node name="Board" type="Node2D"]
 script = ExtResource("1_ef5ss")
