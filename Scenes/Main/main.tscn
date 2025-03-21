@@ -1,8 +1,11 @@
-[gd_scene load_steps=2 format=3 uid="uid://bitnphvnjwr66"]
+[gd_scene load_steps=3 format=3 uid="uid://bitnphvnjwr66"]
 
 [ext_resource type="PackedScene" uid="uid://b30twx3y1g4vc" path="res://Scenes/Board/board.tscn" id="1_1r6ip"]
+[ext_resource type="PackedScene" uid="uid://dednf0trb5555" path="res://Scenes/MainMenu/main_menu.tscn" id="2_lixft"]
 
 [node name="Main" type="Node"]
 
 [node name="Board" parent="." instance=ExtResource("1_1r6ip")]
 position = Vector2(960, 540)
+
+[node name="MainMenu" parent="." instance=ExtResource("2_lixft")]

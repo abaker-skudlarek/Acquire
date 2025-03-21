@@ -15,8 +15,15 @@ run/main_scene="uid://bitnphvnjwr66"
 config/features=PackedStringArray("4.4", "GL Compatibility")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Globals="*res://Resources/globals.gd"
+SignalBus="*res://Resources/Autoloads/signal_bus.gd"
+GameManager="*res://Resources/Autoloads/game_manager.gd"
+
 [debug]
 
+gdscript/warnings/unused_signal=0
 gdscript/warnings/untyped_declaration=2
 
 [display]
@@ -29,6 +36,7 @@ window/stretch/mode="viewport"
 
 folder_colors={
 "res://Assets/": "red",
+"res://Resources/": "gray",
 "res://Scenes/": "orange"
 }
 

@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://b4mqkgu5q7u6h"]
+
+[ext_resource type="Texture2D" uid="uid://fkkp4usavqh4" path="res://Assets/Sprites/unassigned_tile.png" id="1_b86n5"]
+
+[node name="Tile" type="Node2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(66, 66)
+texture = ExtResource("1_b86n5")
