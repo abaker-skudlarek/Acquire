@@ -1,8 +1,8 @@
 extends Node
 
 # Setup
-signal board_setup()
-
+signal board_setup
+signal banker_setup
 
 signal start_game_pressed
 

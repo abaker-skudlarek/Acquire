@@ -8,6 +8,7 @@ func _ready() -> void:
 
 func _start_game() -> void:
     SignalBus.emit_signal("board_setup")  # TODO: wait until this is done somehow?
+    SignalBus.emit_signal("banker_setup")  # TODO: wait until this is done somehow?
 
 
 func _on_start_game_pressed() -> void:
