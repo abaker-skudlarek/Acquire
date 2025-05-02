@@ -2,6 +2,7 @@ extends Node2D
 class_name Player
 
 var id: int = -1
+var username: String = ""
 var tiles: Array = []
 var money: int = 6000
 var stocks: Dictionary[Globals.HotelChain, int] = {
